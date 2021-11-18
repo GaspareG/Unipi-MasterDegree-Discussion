@@ -1,0 +1,76 @@
+\documentclass[11pt,svgnames,smaller]{beamer}
+
+\usepackage{CommandsAndStyle}
+
+\usepackage{listings}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{xcolor}
+\usepackage{textpos}
+\usepackage{transparent}
+\usepackage{tikz}
+\usepackage{epigraph}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{latexsym}
+\usepackage{graphicx} % [demo] is just for the example
+\usepackage{wrapfig}
+\usepackage{array, makecell} %
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+
+\newcommand{\fsamp}{\textsc{F-samp}\xspace}
+\newcommand{\base}{\textsc{base}\xspace}
+\newcommand{\fcount}{\textsc{F-count}\xspace}
+\mode<presentation>
+
+\author{Gaspare Ferraro}
+
+\author[Gaspare Ferraro]{\includegraphics[height=2cm]{images/cherubino}\\Gaspare Ferraro\\ \vspace{10pt} \small{Relatori\\ Prof. Roberto Grossi\\Prof. Andrea Marino}}
+\institute[Università di Pisa]{Università di Pisa\\Dipartimento di Informatica}
+
+\setbeamertemplate{section page}
+{
+	\begin{centering}
+		\begin{beamercolorbox}[sep=16pt,center]{part title}
+			\usebeamerfont{section title}\insertsection\par
+		\end{beamercolorbox}
+	\end{centering}
+}
+
+\title{Fast Similarity on Attributed Networks}
+\date{Pisa, 3 Dicembre 2021}
+\titlegraphic{\vfill}
+% \includegraphics[height=0.4cm]{images/creative_commons.png}}
+
+\setbeamercolor{title}{fg=black!65!black}
+
+% \author[Relatore]{Roberto Grossi}
+
+\begin{document}
+	
+	\begin{frame} 
+	\titlepage
+	\end{frame}
+				
+	\logo{\transparent{0.2}\includegraphics[height=2cm]{images/cherubino}}
+
+	\include{./1_problema}
+	\include{./2_soluzioni}
+	\include{./3_risultati}
+	
+	\section{Fine}
+	\begin{frame}
+		\frametitle{Fine}
+		\centering
+		\Large
+		Grazie per l'attenzione
+ 	\end{frame}
+ 
+	\include{./4_extra}
+ 
+ 
+
+\end{document}
